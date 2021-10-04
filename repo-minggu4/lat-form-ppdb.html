@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Formulir PPDB SMAN 2 Slawi</title>
+    </head>
+    <body>
+        <form action="proses.php"method="post" name="fppdb">
+            <hr color="DarkRed" size="7px" width="700px">
+            <h1 align="center">FORMULIR PPDB JALUR ZONASI TAHUN 2017</h1>
+            <h1 align="center">SMA NEGERI 2 SLAWI</h1>
+            <hr color="DarkRed" size="7px" width="700px">
+
+            <fieldset>
+                <legend>INFO PENDAFTARAN</legend>
+                <table>
+                    <tr>
+                        <td><label for="fnisn">NISN</label></td>
+                        <td><input type="number" id="fnisn" name="fnisn" value="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fsekolah">Asal Sekolah</label></td>
+                        <td>
+                            <select id="fsekolah" name="fsekolah" required="">
+                                <option value="">::Pilih Asal Sekolah::</option>
+                                <option value="SMPN 1 Slawi">SMPN 1 Slawi</option>
+                                <option value="SMPN 2 Slawi">SMPN 2 Slawi</option>
+                                <option value="SMPN 3 Slawi">SMPN 3 Slawi</option>
+                                <option value="SMPN 1 Slawi">SMPN 1 Jatinegara</option>
+                                <option value="SMPN 2 Slawi">SMPN 2 Jatinegara</option>
+                                <option value="SMPN 3 Slawi">SMPN 3 Jatinegara</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="ftahun">Tahun Lulus</label></td>
+                        <td><input type="number" id="ftahun" name="ftahun" value="" required=""></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>DATA CALON PESERTA</legend>
+                <table>
+                    <tr>
+                        <td><label for="fnama">Nama Lengkap</label></td>
+                        <td><input type="text" id="fnama" name="fnama" type="text" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fnik">NIK</label></td>
+                        <td><input type="number" id="fnik" name="ftahun" value="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ftempat">Tempat Lahir</label></td>
+                        <td><input type="text" id="ftempat" name="ftempat" type="text" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fbirthday">Tanggal Lahir</label></td>
+                        <td><input type="date" id="fbirthday" name="fbirthday" required=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label >Jenis Kelamin</label><br>
+                            <input type="radio" id="flk" name="jeniskelamin" value="Laki-laki">
+                            <label for="flk">Laki-laki</label><br>
+                            <input type="radio" id="fpr" name="jeniskelamin" value="Perempuan">
+                            <label for="fpr">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="falamat">Alamat</label><br>
+                            <label for="falamat">-Desa/kel</label><br>
+                            <label for="falamat">-Kecamatan</label><br>
+                            <label for="falamat">-Kabupaten</label><br>
+                            <label for="falamat">-Provinsi</label><br>
+                        </td>
+                        <td><textarea id="falamat"name="falamat" rows="10" cols="35" required=""></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="femail">Email Aktif</label></td>
+                        <td><input type="email" id="femail" name="femail" required=""></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>DATA ORANG TUA</legend>
+                <table>
+                    <tr>
+                        <td><label for="fNkk">Nomor Kartu Keluarga</label></td>
+                        <td><input type="number" id="fNkk" name="ftNkk" value="" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fnamaA">Nama Ayah Kandung</label></td>
+                        <td><input type="text" id="fnamaA" name="fnamaA" type="text" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fagama">Agama</label></td>
+                        <td>
+                            <select id="fagama" name="fagama" required="">
+                                <option value="">== Agama ==</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katholik">Katholik</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fpekerjaan">Pekerjaan</label></td>
+                        <td>
+                            <select id="fpekerjaan" name="fpekerjaan" required="">
+                                <option value="">== Masukkan Pekerjaan ==</option>
+                                <option value="Belum/tidak bekerja">Belum/tidak bekerja</option>
+                                <option value="Pensiunan">Pensiunan</option>
+                                <option value="Pegawai Negeri Sipil">Pegawai Negeri Sipil</option>
+                                <option value="TNI">TNI</option>
+                                <option value="Polri">Polri</option>
+                                <option value="Petani">Petani</option>
+                                <option value="Peternak">Peternak</option>
+                                <option value="Karyawan swasta">Karyawan swasta</option>
+                                <option value="Pedagang">Pedagang</option>
+                                <option value="Mengurus rumah tangga">Mengurus rumah tangga</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fnamaI">Nama Ibu Kandung</label></td>
+                        <td><input type="text" id="fnamaI" name="fnamaI" type="text" required=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="fagamaa">Agama</label></td>
+                        <td>
+                            <select id="fagamaa" name="fagamaa" required="">
+                                <option value="">== Agama ==</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Katholik">Katholik</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fpekerjaanI">Pekerjaan</label></td>
+                        <td>
+                            <select id="fpekerjaanI" name="fpekerjaanI" required="">
+                                <option value="">== Masukkan Pekerjaan ==</option>
+                                <option value="Belum/tidak bekerja">Belum/tidak bekerja</option>
+                                <option value="Pensiunan">Pensiunan</option>
+                                <option value="Pegawai Negeri Sipil">Pegawai Negeri Sipil</option>
+                                <option value="TNI">TNI</option>
+                                <option value="Polri">Polri</option>
+                                <option value="Petani">Petani</option>
+                                <option value="Peternak">Peternak</option>
+                                <option value="Karyawan swasta">Karyawan swasta</option>
+                                <option value="Pedagang">Pedagang</option>
+                                <option value="Mengurus rumah tangga">Mengurus rumah tangga</option>
+                                <option value="Lainnya">Lainnya</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="falamatO">Alamat Orang Tua</label><br>
+                            <label for="falamatO">-Desa/kel</label><br>
+                            <label for="falamatO">-Kecamatan</label><br>
+                            <label for="falamatO">-Kabupaten</label><br>
+                            <label for="falamatO">-Provinsi</label><br>
+                        </td>
+                        <td><textarea id="falamatO"name="falamatO" rows="10" cols="35" required=""></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <tr>
+                <td colspan="2" align="right"><input type="submit" name="fsubmit" value="Kirim/Simpan"></td>
+            </tr>
+        </form>
+
+        <footer>
+            <hr>
+            <p align="center">Pertemuan 4 Pemrograman Berbasis WEB</p>
+            <p align="center"><b>@Dhiaka Shabrina Assyifa</b></p>
+        </footer>
+    </body>
+</html>
