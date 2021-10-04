@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>All Latihan Form</title>
+    </head>
+
+    <body>
+        <h1 align="center"> Latihan Form</h1>
+        <form action="proses.php" method="post" name="flatihan">
+            <h2>HTML Form Attributes</h2>
+            <!-- action, target, method, autocomplete, novalidate, accept-charset, enctype, name, rel  -->
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" name="email"><br>
+            <br><hr color="Dark-red">
+
+            <h2>HTML Form Elements</h2>
+            <!--di dalam <form> baru -> <input><label><select><textarea><button><fieldset><legend><datalist><output><option><optgroup>-->
+            <label for="schl">Asal Sekolah</label>
+            <select id="schl" name="schl" size="1" > <!-- multiple -> bukan dropdown -->
+                <option value="">::Pilih Asal Sekolah::</option>
+                <option value="SMAN 1 Slawi">SMAN 1 Slawi</option>
+                <option value="SMAN 2 Slawi">SMAN 2 Slawi</option>
+                <option value="SMAN 3 Slawi">SMAN 3 Slawi</option>
+                <option value="Lainnya">Lainnya</option>
+            </select><br>
+            <label for="pengalaman">Pengalaman</label>
+            <textarea id="pengalaman"name="pengalaman" rows="10" cols="35"></textarea><br>
+            <h4>Button</h4>
+            <button type="button" onclick="alert('Ini button')">Click Me!</button>
+            <fieldset>
+                <legend>Personalia:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fnames" name="fname" value=""><br>
+            </fieldset>
+            <label>Data list</label><br>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Internet Explorer">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+            <br><hr color="Dark-red">
+
+            <h2>HTML Input Types</h2>
+            <!-- <input type= apa? -> "button","checkbox","color","date","datetime-local","email","file",,"hidden","image","month","number","password","radio","range","reset","search","submit","tel","text","time","url","week"-->
+            <!-- Teks -->
+            <h4>Teks</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br><br>
+            <!-- Password -->
+            <h4>Password</h4>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd">
+            <!-- Radio -->
+            <h4>Radio</h4>
+            <label >Jenis Kelamin:</label><br>
+            <input type="radio" id="flk" name="jeniskelamin" value="Laki-laki">
+            <label for="flk">Laki-laki</label><br>
+            <input type="radio" id="fpr" name="jeniskelamin" value="Perempuan">
+            <label for="fpr">Perempuan</label><br><br>
+            <!-- Check box -->
+            <h4>Check Box</h4>
+            <label >Makanan Favorit</label><br>
+            <input type="checkbox" id="MaFa1" name="MaFa1" value="Ayam Goreng">
+            <label for="Mafa1"> Ayam Goreng </label><br>
+            <input type="checkbox" id="MaFa2" name="MaFa2" value="Gulai Ayam">
+            <label for="Mafa2"> Gulai Ayam </label><br>
+            <input type="checkbox" id="MaFa3" name="MaFa3" value="Semur Ayam">
+            <label for="Mafa3"> Semur Ayam </label><br>
+            <input type="checkbox" id="MaFa4" name="MaFa4" value="Abon Ayam">
+            <label for="Mafa4"> Abon Ayam </label><br>
+            <!-- submit
+            <input type="submit" value="Submit"> -->
+            <!-- button -->
+            <!-- Reset -->
+            <h4>Reset</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset">
+            <br>
+            <!-- Color -->
+            <h4>Color</h4>
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <!-- Date -->
+            <h4>Date</h4>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday">
+            <!-- Date with min max-->
+            <h4>Date with min max</h4>
+            <label for="datemax">Enter a date before 1980-01-01:</label>
+            <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+            <label for="datemin">Enter a date after 2000-01-01:</label>
+            <input type="date" id="datemin" name="datemin" min="2000-01-02">
+            <!-- Date time local-->
+            <h4>Date time local</h4>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+            <input type="submit" value="Submit">
+            <!-- email-->
+            <h4>Email</h4>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="emails" name="email">
+            <!-- file-->
+            <h4>File</h4>
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <!-- Data hidden -->
+            <h4>Date hidden</h4>
+            <label for="fname">First name:</label>
+            <input type="text" id="fnamess" name="fname"><br><br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <!-- Month -->
+            <h4>Month</h4>
+            <label for="bdaymonth">Birthday (month and year):</label>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <!-- Number -->
+            <h4>Number</h4>
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+            <!-- Restrictions -->
+            <h4>Restrictions</h4>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity2" name="quantity" min="0" max="100" step="10" value="30">
+            <!-- range -->
+            <h4>Range</h4>
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+            <!-- Search -->
+            <h4>Search</h4>
+            <label for="gsearch">Search Google:</label>
+            <input type="search" id="gsearch" name="gsearch">
+            <!-- Tel -->
+            <h4>Telephone</h4>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <!-- Time -->
+            <h4>Time</h4>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+            <!-- Url -->
+            <h4>Url</h4>
+            <label for="homepage">Add your homepage:</label>
+            <input type="url" id="homepage" name="homepage">
+            <!-- Week -->
+            <h4>Week</h4>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+            <!-- Attribute -->
+            <h4>Attribute</h4>
+            <input type="">
+            <br><hr color="Dark-red">
+
+            <h2>HTML Input Attributes</h2>
+            <!-- value, readonly, disabled, size, maxlength, min, max, mutiple, pattern, placeholder, required, step, autofocus, height, width, list, autocomplete -->
+            <!-- Value -->
+            <h4>value</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname2" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname2" name="lname" value="Doe">
+            <!-- readonly -->
+            <h4>readonly</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname3" name="fname" value="John" readonly><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname3" name="lname" value="Doe">
+            <!-- disabled -->
+            <h4>disabled</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname4" name="fname" value="John" disabled><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname4" name="lname" value="Doe">
+            <!-- size -->
+            <h4>size</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname5" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin" size="4">
+            <!-- maxlength -->
+            <h4>maxlength</h4>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" size="50"><br>
+            <label for="pin">PIN:</label><br>
+            <input type="text" id="pin" name="pin" maxlength="4" size="4">
+            <!-- DAN LAINNYA-->
+            <br><hr color="Dark-red">
+
+            <h2>Input Form Attributes</h2>
+            <!-- form, formaction, formenctype, formmethod, formtarget, formnovalidate, novalidate -->
+            <h4>The form Attribute</h4>
+            <form action="/action_page.php" id="form1">
+                <label for="fname">First name:</label>
+                <input type="text" id="fnamee" name="fname"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lnamee" name="lname" form="form1"><hr>
+
+            <h4>The formaction Attribute</h4>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+                <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+            </form><hr>
+
+            <h4>The formenctype Attribute</h4>
+            <form action="/action_page_binary.asp" method="post">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <input type="submit" value="Submit">
+                <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+            </form><hr>
+
+            <h4>The formmethod Attribute</h4>
+            <form action="/action_page.php" method="get">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit using GET">
+                <input type="submit" formmethod="post" value="Submit using POST">
+            </form><hr>
+
+            <h4>The formtarget Attribute</h4>
+            <form action="/action_page.php">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <input type="submit" value="Submit">
+                <input type="submit" formtarget="_blank" value="Submit to a new window/tab">
+            </form><hr>
+
+            <h4>The formnovalidate Attribute</h4>
+            <form action="/action_page.php">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+                <input type="submit" formnovalidate="formnovalidate" value="Submit without validation">
+            </form><hr>
+
+            <h4>The novalidate Attribute</h4>
+            <form action="/action_page.php" novalidate>
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br><hr color="Dark-red">
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
