@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contoh Audio di HTML Lengkap With Atribut</title>
+</head>
+<body>
+    <h1 align="Center">Contoh Audio V2 di web</h1>
+    <ul>
+      <li>
+        <!-- Atribut controls untuk mengaktifkan play,pause,stop,scroll,dan volume -->
+        <h4>Atribut controls</h4>
+        <p>Mars UDINUS with True</p>
+        <!-- True=aktif-->
+        <audio controls="True">
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut control
+        </audio>
+        <br>
+        <p>Mars UDINUS with False</p>
+        <!-- False=nonaktif -->
+        <audio controls="False">
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut control
+        </audio>
+        <br>
+      </li>
+
+      <li>
+        <!-- Atribut autoplay untuk putar audio secara otomatis -->
+        <h4>Atribut autoplay</h4>
+        <p>Hymne UDINUS with True autoplay</p>
+        <!-- True=aktif-->
+        <audio autoplay="True">
+            <source src="media/hymne udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut autoplay
+        </audio>
+        <br>
+        <p>Mars UDINUS with False autoplay</p>
+        <!-- False=nonaktif -->
+        <audio autoplay>
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut autoplay
+        </audio>
+        <br>
+      </li>
+
+      <li>
+        <!-- Atribut loop untuk mengulang ulang pemutaran audio -->
+        <h4>Atribut loop</h4>
+        <p>Mars UDINUS with True</p>
+        <!-- True=aktif-->
+        <audio loop="True" auto loop>
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut loop
+        </audio>
+        <br>
+        <p>Mars UDINUS with False auto loop</p>
+        <!-- False=nonaktif -->
+        <audio loop>
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut loop
+        </audio>
+        <br>
+      </li>
+
+      <li>
+        <!-- Atribut muted untuk mensenyapkan audio -->
+        <h4>Atribut muted</h4>
+        <p>Mars UDINUS with True</p>
+        <!-- True=aktif-->
+        <audio muted="True">
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut muted
+        </audio>
+        <br>
+        <p>Mars UDINUS with False</p>
+        <!-- False=nonaktif -->
+        <audio muted>
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio dengan atribut muted
+        </audio>
+        <br>
+      </li>
+
+      <li>
+        <!-- Audio sebagai Background-->
+        <h4>Atribut hidden autoplay loop(Audio sebagai background)</h4>
+        <p>Mars UDINUS with True</p>
+        <!-- True=aktif-->
+        <audio hidden autoplay muted>
+            <source src="media/mars udinus.mp3" type="audio/mpeg">
+            Browser anda tidak mendukung tag audio untuk background
+        </audio>
+        <br>
+      </li>
+
+    </ul>
+    <footer align="center">
+        <hr>
+        @Dhiaka Shabrina Assyifa_A11.2020.13094
+    </footer>
+</body>
+</html>
