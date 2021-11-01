@@ -1,0 +1,9 @@
+Selector CSS (Detail)
+Selektor adalah katakunci dan simbol yang digunakan pada CSS
+untuk menyeleksi atau memilih elemen HTML.
+Ada 5 macam selektor di CSS:
+1. Selektor Tag
+2. Selektor Class
+3. Selektor ID
+4. Selektor Atribut
+5. Selektor Universals

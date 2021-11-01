@@ -1,0 +1,51 @@
+>>>>>>>>>>>>======== STRUKTUR CSS ========<<<<<<<<<<<<
+1. SELEKTOR
+Selektor adalah kata kunci untuk memilih elemen HTML yang akan kita atur.
+Contoh :
+h1 {
+color: red;
+}
+Artinya: Memilih semua elemen <h1>, lalu diberikan warna
+teks red (merah).
+Selektor dapat berupa nama tag, class, id, dan atribut.
+
+Contoh:
+/* Selektor dengan nama tag */
+h2 {
+color: blue
+}
+/* Selektor degnan class */
+.bg-yellow {
+backgound-color: yellow;
+}
+/* selektor dengan ID elemen */
+#header {
+background: grey;
+}
+/* Selektor dengan Atribut */
+input[type=text]{
+background: yellow;
+}
+
+2. BLOK DEKLARASI
+Blok deklarasi adalah tempat untuk menuliskan atribut-atibut CSS
+yang akan diberikan ke pada selektor.
+Contoh:
+p {
+font-size: 18px;
+}
+Artinya, akan mengatur ukuran font dari tag <p> sebesar 18px.
+Blok deklarasi dimulai atau dibuka dengan tanda kurung { lalu
+ditutup dengan }.
+
+3. PROPERTI DAN NILAI
+Properti merupakan atribut atau sekumpulan aturan yang akan
+diberikan kepada elemen yang dipilih.
+properti: "nilai";
+Setiap properti harus diakhiri dengan titik koma (;). Apabila hanya
+terdapat satu properti, boleh tidak menggunakan titik koma.
+Properti harus ditulis di dalam blok deklarasi.
+Contoh:
+blockquote {
+background: pink;
+}

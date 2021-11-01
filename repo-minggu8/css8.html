@@ -1,0 +1,46 @@
+<!-- Dhiaka Shabrina Assyifa_A11.2020.13094 -->
+<!-- PRAKTIKUM 9 -->
+<!-- PENULISAN SELEKTOR Universal-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Internal CSS</title>
+    <!-- penulisan internal css dalam tag head -->
+    <style type="text/css">
+    * {
+        border: 1px solid grey;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    </style>
+</head>
+<body>
+    <p>
+        Selektor universal adalah selektor yang digunakan unutk menyeleksi
+        semua elemen pada jangkauan (scope) tertentu.
+        Contoh:
+    </p>
+    <p>
+        * {
+            border: 1px solid grey;
+        }
+    </p>
+    <p>
+        Artinya semua elemen akan memiliki garis solid dengan
+        ukuran 1px dan berwarna grey.
+        Selektor universal bisanya digunakan untuk me-reset CSS.
+        Pada halaman HTML, ada beberapa CSS bawaan browser
+        seperti padding dan margin pada elemen tertentu.
+        Reset bertujuan untuk menghilangkan padding dan margin tersebut.
+        Contoh CSS reset:
+    </p>
+    <p>
+        * {
+        padding: 0;
+        margin: 0;
+        }
+        Maka semua elemen tidak akan memiliki padding dan margin.
+    </p>
+</body>
